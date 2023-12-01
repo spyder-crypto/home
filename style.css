@@ -1,0 +1,641 @@
+:root {
+    --gradient: rgb(71, 253, 166), rgb(143, 118, 244), rgb(236, 118, 160);
+    --grey: rgb(200, 200, 200);
+}
+
+html {
+    font-family: 'K2D', sans-serif;
+    color: white;
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: black;
+
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: rgb(20, 20, 20);
+}
+
+.wrapper {
+    width: 100vw;
+    max-width: 100%;
+
+    overflow: hidden;
+}
+
+/* FLAGS */
+.flag {
+    background-image: linear-gradient(to right, var(--gradient));
+}
+
+#flagS {
+    border-radius: 6px 6px 0px 0px;
+}
+
+#flagE {
+    border-radius: 0px 0px 6px 6px;
+}
+
+.flag p {
+    color: black;
+
+    font-size: 10px;
+    text-align: center;
+    margin: 0px;
+
+    line-height: 20px;
+    letter-spacing: 6px;
+}
+
+#flag {
+    margin: 40px 0px;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* TOP BAR */
+
+.page1 .main {
+    margin: 40px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main img {
+    aspect-ratio: 1;
+    height: 50px;
+}
+
+.main p {
+    margin: 0px;
+    padding-left: 30px;
+
+    letter-spacing: 8px;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.secondary {
+    display: flex;
+    justify-content: center;
+
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: var(--grey);
+
+    margin: 20px 0px 0px 0px;
+}
+
+.secondary p {
+    margin: 10px 0px;
+    padding: 4px 20px;
+
+    font-size: 20px;
+}
+
+.secondary #LEARN {
+    border-right: solid;
+    position: relative;
+    left: 1px;
+
+    display: none;
+}
+
+.secondary #BUY {
+    border-left: solid;
+    position: relative;
+    right: 1px;
+
+    display: none;
+}
+
+.spider {
+    display: flex;
+    justify-content: center;
+}
+
+.spider img {
+    aspect-ratio: 1;
+    height: 220px;
+
+    position: relative;
+
+    display: none;
+}
+
+/* -------------------------------------------------------------- */
+
+/* Page 1 Content */
+
+.content {
+    text-align: center;
+    padding: 0px 10%;
+}
+
+.content .text #MAIN{
+    font-size: 40px;
+    font-weight: bold;
+
+    margin: 10px 0px;
+}
+
+.content .text p {
+    margin-top: 20px;
+
+    font-size: 14px;
+}
+
+.content .buttons {
+    margin: 60px 0px;
+}
+
+.content .buttons p{
+    margin: 0px 40px;
+    
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: bold;
+
+    border: solid 2px;
+    border-radius: 40px;
+    border-color: var(--grey);
+}
+
+.content #START {
+    border: none;
+    background-image: linear-gradient(to right, var(--gradient));
+
+    margin: 20px 40px;
+    border-radius: 40px;
+    padding: 4px;
+}
+
+#START p {
+    border: none;
+    margin: 0px;
+
+    background-color: black;
+}
+
+.more {
+    text-align: center;
+}
+
+.more img {
+    aspect-ratio: 3/1;
+
+    height: 16px;
+}
+
+/* ----------------------------------------------------------- */
+
+/* Page 2 Content */
+
+#SHINY {
+    margin: 0px;
+
+    font-weight: bold;
+
+    background: linear-gradient(to right, var(--gradient));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page2 .main {
+    height: 110px;
+}
+
+.page2 .main p{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.page2 .main #HEADING {
+    font-size: 40px;
+    font-weight: bold;
+
+    background: linear-gradient(to right, var(--gradient));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page2 .main .imageweb {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+
+    position: relative;
+    top: -123px;
+}
+
+.page2 .main .imageweb img{
+    aspect-ratio: 1;
+    height: 80px;
+}
+
+.page2 .content1 {
+    margin: 10px;
+    padding: 30px 14px;
+
+    text-align: right;
+
+    border: solid 4px;
+    border-radius: 40px 0px 0px 40px;
+
+    border-color: var(--grey);
+
+    position: relative;
+    left: 26px;
+}
+
+.page2 .pg2Web {
+    display: flex;
+    justify-content: end;
+}
+
+#pg2web1 {
+    aspect-ratio: 1;
+    height: 140px;
+
+    position: relative;
+    top: -29px; left: 70px;
+
+    filter: brightness(80%);
+}
+
+#pg2web2 {
+    aspect-ratio: 1;
+    height: 100px;
+
+    transform: rotate(-90deg);
+
+    position: relative;
+    top: 7px; right: 12px;
+
+    filter: brightness(80%);
+}
+
+.page2 .content2 {
+    margin: 0px 4px;
+    padding: 20px 10px;
+
+    border: solid 4px;
+    border-radius: 0px 30px 30px 0px;
+    border-color: var(--grey);
+
+    position: relative;
+    left: -16px;
+}
+
+.page2 .content2 p {
+    margin: 0px;
+}
+
+.page2 .content2 .tagline {
+    font-size: 30px;
+} 
+
+.page2 .p2div2 {
+    position: relative;
+    top: -120px;
+}
+
+.page2 .joinnow {
+    text-align: center;
+
+    position: relative;
+    top: -60px;
+}
+
+.page2 .joinnow img {
+    aspect-ratio: 3/1;
+    height: 16px;
+}
+
+/* -------------------------------------------------------- */
+
+/* Page 3 Content */
+
+.page3 img{
+    aspect-ratio: 1;
+    height: 70px;
+
+    filter: brightness(80%);
+}
+
+.p3div1 .titlehead p{
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 10px;
+
+    margin: 4px;
+
+    position: relative;
+    top: -40px;
+}
+
+.p3div1 .supplytext #LTDSPLY{
+    font-size: 34px;
+    letter-spacing: 8px;
+    font-weight: bold;
+
+    margin-top: 60px;
+
+    background: linear-gradient(to right, var(--gradient));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.p3div1 .supplytext p{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    margin: 4px;
+}
+
+.page3 .p3investnow {
+    margin: 100px 60px 80px 60px;
+    padding: 4px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, var(--gradient));
+    border-radius: 40px;
+}
+
+.page3 .p3investnow p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 16px;
+
+    background-color: black;
+    border-radius: 40px;
+}
+
+/* --------------------------------------------------------------- */
+
+/* Big Screen Version */
+
+@media screen and (min-width: 900px) {
+    html {
+        background-color: black;
+    }
+
+    .flag p {
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+/* TOP BAR */
+
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 0px 10%;
+
+        position: relative;
+        top: -10px;
+    }
+
+    .main p {
+        letter-spacing: 12px;
+    }
+
+    .topbar .secondary {
+        position: relative;
+        top: -8px;
+    }
+
+    .topbar .secondary #LEARN{
+        display: block;
+    }
+
+    .topbar .secondary #BUY{
+        display: block;
+    }
+
+    .spider {
+        display: flex;
+        justify-content: end;
+        margin: 0px 10%;
+
+        position: relative;
+        left: -30px; top: -60px;
+    }
+    .spider img{
+        display: block;
+    }
+/* ---------------------------------------------- */
+
+/* PAGE 1 */
+
+    .page1 {
+        height: 850px;
+    }
+
+    .content {
+        position: relative;
+        left: -60px; top: -140px;
+
+        height: 120px;
+    }
+
+    .content .text {
+        position: relative;
+        top: 150px;
+    }
+    
+    .content .text p {
+        width: 400px;
+
+        font-size: 20px;
+
+        position: relative;
+        left: 50px;
+    }
+
+    .content .text #MAIN {
+        width: 500px;
+
+        color: white;
+
+        font-size: 50px;
+        position: relative;
+        left: 0px; top: -40px;
+    }
+
+    .content .buttons {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        position: relative;
+        top: 20px; left: 100px;
+    }
+
+    .content .buttons #START {
+        margin: 10px 10px 10px 10px;
+    }
+
+    .content .buttons #START p{
+        padding: 0px 40px;
+    }
+
+    .content .buttons p {
+        padding:  0px 40px;
+        margin: 0px;
+    }
+
+    .page1 .more {
+        position: relative;
+        top: 270px;
+    }
+
+/* -------------------------------------------------------- */
+
+/* PAGE 2 */
+
+    .page2 .main p {
+        font-size: 28px;
+
+        position: relative;
+        left: -40px; top: 80px;
+
+        margin: 0px 10%;
+    }
+
+    .page2 .main #HEADING {
+        font-size: 80px;
+
+        position: relative;
+        top: 60px;
+    }
+
+    .page2 .main .imageweb {
+        margin: 0px 10%;
+
+        justify-content: start;
+        
+        position: relative;
+        top: 54px; left: 160px;
+    }
+
+    .page2 .main .imageweb img {
+        height: 150px;
+    }
+
+    .page2 .p2div1 {
+        position: relative;
+        top: 100px;
+    }
+
+    .page2 .content1 {
+        margin: 0px 0px 0px 50%;
+
+        font-size: 20px;
+        padding: 50px 15px 50px 50px;
+
+        position: relative;
+        left: 10px; top: 50px;
+
+        border-width: 8px;
+        border-radius: 100px 0px 0px 100px;
+    }
+
+    .pg2Web #pg2web1 {
+        height: 300px;
+        position: relative;
+        left: 140px; top: 8px;
+    }
+
+    #pg2web2 {
+        height: 140px;
+
+        position: relative;
+        top: 8px;
+    }
+
+    .page2 .content2 {
+        position: relative;
+        left: -4px;
+
+        margin: 0px 30% 0px 0px;
+    }
+
+    .page2 .content2 p {
+        font-size: 30px;
+    }
+
+    .page2 .content2 .tagline {
+        font-size: 50px;
+    } 
+
+    .page2 .p2div2 {
+        position: relative;
+        top: -120px;
+    }
+
+    .page2 .joinnow {
+        position: relative;
+        top: -40px;
+    }
+
+/* ----------------------------------------------------------- */
+
+/* PAGE 3 */
+
+    .page3 {
+        height: 830px;
+    }
+
+    .p3div1 img {
+        height: 180px;
+    }
+
+    .p3div1 .titlehead {
+        position: relative;
+        top: -24px;
+    }
+
+    .p3div1 .titlehead p{
+        font-size: 40px;
+
+        letter-spacing: 20px;
+    }
+
+    .p3div1 .supplytext {
+        position: relative;
+        top: 30px;
+    }
+
+    .p3div1 .p3investnow {
+        position: relative;
+        top: 200px;
+
+        margin: 0px 35%;
+    }
+
+    .p3div1 .p3investnow p {
+        text-align: center;
+
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+}
